@@ -1,9 +1,79 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Title</title>
-  </head>
-  <body>
-    <p>Paragraph</p>
+<!-- ICS2O-Unit5-Assignment-4-HTML-MDL -->
+<html lang="en-ca">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Ticket Pricing Program" />
+  <meta name="keywords" content="mths, icd2o" />
+  <meta name="author" content="Catherine Vu" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-purple.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+  <link rel="manifest" href="./site.webmanifest" />
+  <title>Bubble Tea Shop, in JS</title>
+</head>
+
+<body>
+
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="./js/script.js"></script>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">Bubble tea Shop, in JS</span>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="right-image">
+        <img src="./images/81GlLDxbcwL._AC_UF1000,1000_QL80_.jpg" alt="laptop image" />
+      </div>
+      <br>
+      <div class="page-content">Select a size you want.</div>
+      <form action="#">
+  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="small">
+    <input type="radio" id="regular" class="mdl-radio__button" name="size" value="regular" checked>
+    <span class="mdl-radio__label">Small ($5.00)</span>
+  </label><br />
+  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="large">
+    <input type="radio" id="large" class="mdl-radio__button" name="size" value="large">
+    <span class="mdl-radio__label">Large ($7.00)</span>
+  </label>
+  <br />
+  <br />
+  <div class="page-content">Choose the number of toppings you want.</div>
+  <br />
+  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="1">
+    <input type="radio" id="1" class="mdl-radio__button" name="number-of-toppings" value="1" checked>
+    <span class="mdl-radio__label">1</span>
+    </label>
+    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="2">
+    <input type="radio" id="2" class="mdl-radio__button" name="number-of-toppings" value="2">
+    <span class="mdl-radio__label">2</span>
+    </label>
+  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="3">
+    <input type="radio" id="3" class="mdl-radio__button" name="number-of-toppings" value="3">
+    <span class="mdl-radio__label">3</span>
+    </label>
+    <br />
+  <br />
+  <!-- Accent-colored raised button with ripple -->
+  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+    onclick="calculateCost()" type="button">
+    Enter!
+  </button>
+  </form>
+  <br />
+<div class="page-content">
+  <div id="result"></div>
+    </div>
+    </main>
+    </div>
   </body>
+
 </html>
+
