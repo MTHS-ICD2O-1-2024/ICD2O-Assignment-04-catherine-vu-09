@@ -35,7 +35,7 @@ function calculateCost() {
     <p>You selected a ${size} bubble tea with ${toppingCount} topping(s).</p>
     <p>Subtotal: $${subtotal.toFixed(2)}</p>
     <p>Tax (13%): $${taxAmount.toFixed(2)}</p>
-    <p>Total (rounded up): $${totalCost.toFixed(2)}</p>
+    <p>Total: $${totalCost.toFixed(2)}</p>
   `;
 }
 
