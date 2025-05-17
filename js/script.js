@@ -27,6 +27,9 @@ function calculateCost() {
   const subtotal = sizeCost + totalToppingCost;
   const taxAmount = subtotal * TAX_RATE;
 
+     // Round total to nearest cent
+     const totalCost = Math.round((subtotal + taxAmount) * 100) / 100;
+
   // Display result using <p> tags
   document.getElementById("result").innerHTML = `
     <p>You selected a ${size} bubble tea with ${toppingCount} topping(s).</p>
